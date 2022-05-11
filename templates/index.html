@@ -48,7 +48,8 @@
             <p class="lead text-muted">Sube una foto de tu comida mexicana y descubre qué ingredientes tiene</p>
 
             <div class="container">
-                <div class="row align-items-center">
+
+                <form class="row align-items-center">
                     <div class="col">
                         <label for="formFileLg" class="form-label"></label>
                         <input class="form-control" type="file" accept="image/*" name="image" id="formFile" onchange="loadFile(event)" />
@@ -57,11 +58,12 @@
                         <img id="output" width="350" />
                     </div>
                     <div class="col">
+                        <button type="submit" class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Analizar imagen</button>
                         <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            Analizar imagen
+                            Recomendaciones de platillos
                         </a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <script>
